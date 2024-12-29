@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../../public/home_bg.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.loginWindow {
+  display: flex;
+  flex-direction: column;
+  height: 459px;
+  align-items: center;
+  width: 576px;
+  padding: 120px;
+  background-color: #EDEEEF;
+  border-radius: 32px;
+}
+
+.loginTitle {
+  font-size: 32px;
+  color: black;
+  line-height: 41px;
+  text-align: center;
+}
+
+.loginBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #444;
+  width: 351px;
+  height: 56px;
+  border-radius: 100px;
+  margin-top: 32px;
+  cursor: pointer;
+  transition: all 0.5s;
+  &:hover {
+    background: #b1efb1;
+    transition: all 0.5s;
+  }
+}
+
+.loginGoogleBtnText {
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.loggedUserWrapper {
+  color: black;
+  font-weight: bold;
+}
+
+.loginTrouble {
+  cursor: pointer;
+  margin-top: 28px;
+  color: #62656A;
+  font-size: 14px;
+  transition: all 0.5s;
+  &:hover {
+    color: black;
+    transition: all 0.5s;
+  }
+}
+
+.logoutBtn {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  color: #444;
+  width: 200px;
+  height: 56px;
+  border-radius: 100px;
+  font-weight: bold;
+  transition: all 0.5s;
+  &:hover {
+    background: #efb1b1;
+    transition: all 0.5s;
+  }
+}

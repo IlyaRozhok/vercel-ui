@@ -1,0 +1,38 @@
+.budgetCard {
+  width: 361px;
+  height: 120px;
+  background: white;
+  border-radius: 16px;
+  padding: 28px 12px 28px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s;
+  &:hover {
+    background: black;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+}
+
+.cardHeader {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.cardDescription {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.cardInfoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardIcon {
+  min-width: 70px;
+  height: 60px;
+}

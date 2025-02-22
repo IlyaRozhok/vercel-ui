@@ -1,0 +1,283 @@
+.oneStep {
+  display: flex;
+  height: 100vh;
+  background: #0a0a0a;
+}
+
+.onboardingProgressWrapper {
+  width: 30%;
+  color: black;
+  padding: 60px 50px;
+  background: white;
+}
+
+.onboardingProgressTitle {
+  font-size: 20px;
+  color: #042033;
+  font-weight: bold;
+}
+.onboardingProgressDescr {
+  font-size: 14px;
+  line-height: 20px;
+  color: #818F99;
+  margin-top: 33px;
+}
+
+.mainSection {
+  padding: 60px 0 78px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  background-color: #F2F2F2;
+  width: 70%;
+}
+
+.keyFeaturesSection {
+  text-align: center;
+  padding: 60px 0 78px 0;
+  background-color: #F2F2F2;
+  width: 70%;
+}
+.progressOnboardingContainer {
+  margin-top: 33px;
+  color: grey;
+}
+
+.progressOnboardingActive {
+  color: black;
+  font-weight: bold;
+  margin-top: 23px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: #000;
+    position: absolute;
+    left: -32px;
+    background: url("../../assets/img/icon_current_onboarding.svg") no-repeat;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 11px;
+    background: #9f9e9e;
+    position: absolute;
+    left: -20px;
+    top: 30px;
+
+  }
+}
+
+.progressOnboardingResolved {
+  color: black;
+  font-weight: bold;
+  margin-top: 23px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: #000;
+    position: absolute;
+    left: -32px;
+    background: url("../../assets/img/icon_resolved_onboarding.svg") no-repeat;
+  }
+  &:after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 23px;
+    background: #000000;
+    position: absolute;
+    left: -20px;
+    top: 24px;
+
+  }
+}
+
+.progressOnboardingRegular {
+  width: 24px;
+  height: 24px;
+  border: 1px solid grey;
+  border-radius: 50%;
+  background: white;
+}
+
+.progressOnboarding {
+  margin-top: 23px;
+  position: relative;
+  &:before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: 1px solid lightgrey;
+    position: absolute;
+    left: -32px;
+    border-radius: 50%;
+  }
+  &:not(:last-child) {
+    &:after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 11px;
+      background: #9f9e9e;
+      position: absolute;
+      left: -20px;
+      top: 30px;
+    }
+  }
+}
+
+.gatherUserInfo {
+  text-align: center;
+  margin-top: 105px;
+}
+
+.userOnboardingTitle {
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 24px;
+}
+.onboardingMainTitle {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.input {
+  padding: 10px 20px;
+  width: 500px;
+  height: 64px;
+  border: none;
+  outline: none;
+  background: white;
+  border-radius: 16px;
+  color: black;
+  font-size: 17px;
+}
+
+.genderWrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 250px
+}
+
+.genderButtonWrapper {
+  width: 238px;
+  margin: 0 12px;
+}
+
+.nextBtnWrapper {
+  position: absolute;
+  width: 500px;
+  bottom: 20px;
+}
+
+.keyFeaturesNextBtn {
+  width: 500px;
+  margin: 160px auto;
+}
+
+.sliderWrapper {
+  padding: 0 50px;
+  &Img {
+    width: 250px;
+    margin: 25px auto;
+  }
+}
+
+.budgetCards {
+  margin-top: 20px;
+}
+.budgetCardContainer {
+  margin-bottom: 15px;
+}
+
+.cardInfoWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainBudgetCard {
+  width: 361px;
+  margin-top: 25px;
+  min-height: 160px;
+  background: url("../../assets/img/bg_main_budget_card.png");
+  border-radius: 16px;
+  padding: 20px 82px 25px 28px;
+  color: white;
+  &Btn {
+    color: white;
+    margin-top: 16px;
+    width: 94px;
+    height: 32px;
+    background: black;
+    border-radius: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.5s;
+    &:hover {
+      background: white;
+      color: black;
+      transition: all 0.5s;
+    }
+  }
+  h5 {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  h6 {
+    margin-top: 12px;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+  }
+}
+
+.tryMore {
+  margin-top: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-right: 13rem;
+  &Text {
+    font-size: 18px;
+    font-weight: bold;
+
+  }
+}
+
+.budgetNameInputWrapper {
+  margin-top: 150px;
+}
+
+.budgetAmount {
+  width: 500px;
+  height: 112px;
+  background: white;
+  border-radius: 16px;
+
+  &Input {
+    position: relative;
+    height: 100%;
+    background: white;
+    border-radius: 16px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+  }
+}
+
+.planningModeWrapper {
+  margin-top: 35px;
+}
+

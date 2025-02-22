@@ -1,0 +1,83 @@
+.multi-select-dropdown {
+    width: 600px;
+    font-family: Arial, sans-serif;
+    position: relative;
+    border-radius: 8px;
+    background-color: #F2F2F2;
+}
+
+.search-bar {
+    margin-top: 50px;
+    width: 100%;
+    padding: 10px 10px 10px 50px;
+    margin-bottom: 31px;
+    border: none;
+    background-color: white;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+}
+
+.currency-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+.currency-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.currency-item:hover {
+    background-color: #f7f7f7;
+}
+
+.currency-item.selected {
+    background-color: #e6f7ff;
+}
+
+.currency-flag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+.currency-code {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.currency-name {
+    flex: 1;
+    font-size: 14px;
+    color: #666;
+}
+
+.checkmark {
+    position: absolute;
+    color: green;
+    font-weight: bold;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.currency-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    text-align: start;
+}

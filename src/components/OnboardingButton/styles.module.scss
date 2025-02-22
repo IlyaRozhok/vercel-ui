@@ -1,0 +1,29 @@
+.nextBtn {
+  background-color: #B2B2B2;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 75px;
+  color: white;
+  border: none;
+  transition: 0.5s all;
+  &:hover {
+    background: #000000;
+    transition: 0.5s all;
+    color: white;
+  }
+  &:disabled {
+    color: #b9b8b8;
+    background: #7e807e;
+    cursor: not-allowed;
+  }
+  &Active {
+    background: #000000;
+    color: white;
+  }
+}
